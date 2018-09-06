@@ -1,0 +1,17 @@
+version: '3.2'
+
+services:
+#  main:
+#   build: .
+#   ports:
+#    - "3000:3000"
+#   depends_on:
+#    - ibcdb
+#   environment:
+#    - DB_HOST=ibcdb
+#   links:
+#    - ibcdb
+ ibcdb:
+  build: .
+  ports:  
+   - "3307:3307"
