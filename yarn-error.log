@@ -1,17 +1,30 @@
 Arguments: 
-  /Users/ekkalakleelasornchai/.nvm/versions/node/v8.11.4/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js start
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js add global nodemon
 
 PATH: 
-  /Users/ekkalakleelasornchai/go/bin:/Users/ekkalakleelasornchai/.nvm/versions/node/v8.11.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+  /Users/admin/workspace/google-cloud-sdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/admin/workspace/google-cloud-sdk/bin
 
 Yarn version: 
-  1.5.1
+  1.7.0
 
 Node version: 
-  8.11.4
+  8.9.4
 
 Platform: 
   darwin x64
+
+Trace: 
+  Error: connect ENETUNREACH 104.16.16.35:443 - Local (0.0.0.0:55935)
+      at Object._errnoException (util.js:1022:11)
+      at _exceptionWithHostPort (util.js:1044:20)
+      at internalConnect (net.js:971:16)
+      at emitLookup (net.js:1106:7)
+      at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:103250:28
+      at /usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:103159:13
+      at RawTask.module.exports.RawTask.call (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:83658:19)
+      at flush (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:83740:29)
+      at _combinedTickCallback (internal/process/next_tick.js:131:7)
+      at process._tickCallback (internal/process/next_tick.js:180:9)
 
 npm manifest: 
   {
@@ -19,7 +32,7 @@ npm manifest:
     "version": "0.0.0",
     "private": true,
     "scripts": {
-      "start": "node ./bin/www"
+      "start": "nodemon ./bin/www"
     },
     "dependencies": {
       "body-parser": "~1.18.2",
@@ -2199,19 +2212,3 @@ Lockfile:
       cliui "^2.1.0"
       decamelize "^1.0.0"
       window-size "0.1.0"
-
-Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: sh
-  Arguments: -c node ./bin/www
-  Directory: /Users/ekkalakleelasornchai/workspace/ibc-back
-  Output:
-  
-      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
-      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:30281:17)
-      at emitTwo (events.js:126:13)
-      at ChildProcess.emit (events.js:214:7)
-      at maybeClose (internal/child_process.js:925:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
